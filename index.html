@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="d-flex w-100 justify-content-between">
+                <div>                    
+                        <i class="fa-brands fa-instagram"></i>
+                        <h4 class="d-inline-block">Instagram</h4>
+                </div>
+                <div class="d-flex align-right justify-content-end">
+                    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">Profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Accesibility</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Privacy and Data</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-danger" href="#">Log out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Caption:</h6>
+                    <textarea class="form-control" placeholder="Add the caption of your post here"
+                        id="floatingTextarea2"></textarea>
+                    <div class="row p-2">
+                        <button class="col-1 border rounded p-1 m-1 btn-light">
+                            <i class="fa-solid fa-camera"></i>
+                        </button>
+                        <button class="col-1 border rounded p-1 m-1 btn-light">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-2">
+        <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true"><i
+                        class="fa-solid fa-table-cells"></i></a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row">
+                    <div class="col-4 p-1">
+                        <img style="height: 33vw; object-fit: cover;" src="https://monkeyworlds.com/wp-content/uploads/human-monkey.webp" class="img-fluid w-100" alt="mono">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img style="height: 33vw; object-fit: cover;" src="https://media.istockphoto.com/id/1469154181/es/foto/buscar-aqu%C3%AD.jpg?s=612x612&w=0&k=20&c=g507iUAX5ia4oPCT--y41PhoUCQkovSMlRAervn9rkM=" class="img-fluid w-100" alt="persona">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img style="height: 33vw; object-fit: cover;" src="https://www.muyinteresante.com/wp-content/uploads/sites/5/2022/11/19/637902d7c08c5.jpeg?resize=1024,768" class="img-fluid w-100" alt="futbol">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1">
+                        <img style="height: 33vw; object-fit: cover;" src="https://secrecyjewels.es/blog/wp-content/uploads/2022/10/esencia-de-una-persona.jpg" class="img-fluid w-100" alt="persona2">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img style="height: 33vw; object-fit: cover;" src="https://www.carbonneutralplus.com/wp-content/uploads/2021/07/Turismo-sostenible.jpg" class="img-fluid w-100" alt="viaje">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img style="height: 33vw; object-fit: cover;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU0cLGRcS0Dod2KUWNltGry5-1Rr-9njrzCw&s" class="img-fluid w-100" alt="programa">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1">
+                        <img style="height: 33vw; object-fit: cover;" src="https://centrointegraldepsicologia.com/wp-content/uploads/2023/06/El-Sindrome-de-la-Buena-Persona-Los-Limites-Olvidados.png" class="img-fluid w-100" alt="persona3">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img style="height: 33vw; object-fit: cover;" src="https://www.enriquedans.com/wp-content/uploads/2023/06/Coding-Arnold-Francisca-Unsplash-scaled.jpeg" class="img-fluid w-100" alt="programar">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img style="height: 33vw; object-fit: cover;" src="https://cdn.aarp.net/content/dam/aarpe/es/home/turismo/consejos-para-viajar/info-2020/viajes-despues-de-pandemia-de-coronavirus/_jcr_content/root/container_main/container_body_main/container_body1/container_body_cf/container_image/articlecontentfragment/cfimage.coreimg.50.932.jpeg/content/dam/aarp/travel/tips/2020/05/1140-man-looking-at-world-map-on-wall-esp.jpg" class="img-fluid w-100" alt="viaje2">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade overflow-hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="row my-4">
+                    <div class="col-6 mx-auto border rounded p-0">
+                        <div class="d-flex p-2">
+                            <div class="w-100 fs-4">
+                               <h3>Título</h3>
+
+                            </div>
+                            <small class="align-bottom">
+                                10/10
+                            </small>
+                        </div>
+                        <img style="object-fit: cover;" src="https://monkeyworlds.com/wp-content/uploads/human-monkey.webp" class="img-fluid w-100 col-12" alt="mono"/>
+                        <div class="p-2">
+                            <i class="fa-solid fa-heart"></i>
+                            <strong>100 Likes</strong>
+                            <p>Esto es un comentario</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-6 mx-auto border rounded p-0">
+                        <div class="d-flex p-2">
+                            <div class="w-100 fs-4">
+                                <h3>Título</h3>
+
+                            </div>
+                            <small>
+                                10/10
+                            </small>
+                        </div>
+                        <img style="object-fit: cover;" src="https://media.istockphoto.com/id/1469154181/es/foto/buscar-aqu%C3%AD.jpg?s=612x612&w=0&k=20&c=g507iUAX5ia4oPCT--y41PhoUCQkovSMlRAervn9rkM=" class="img-fluid w-100 col-12" alt="persona"/>
+                        <div class="p-2">
+                            <i class="fa-solid fa-heart"></i>
+                            <strong>100 Likes</strong>
+                            <p>Esto es un comentario</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-6 mx-auto border rounded p-0">
+                        <div class="d-flex p-2">
+                            <div class="w-100 fs-4">
+                               <h3>Título</h3>
+
+                            </div>
+                            <small>
+                                10/10
+                            </small>
+                        </div>
+                        <img style="object-fit: cover;" src="https://www.muyinteresante.com/wp-content/uploads/sites/5/2022/11/19/637902d7c08c5.jpeg?resize=1024,768" class="img-fluid w-100 col-12" alt="futbol"/>
+                        <div class="p-2">
+                            <i class="fa-solid fa-heart"></i>
+                            <strong>100 Likes</strong>
+                            <p>Esto es un comentario</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
